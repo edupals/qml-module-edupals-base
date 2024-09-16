@@ -2,7 +2,7 @@
  * Copyright (C) 2024 Edupals project
  *
  * Author:
- *  Enrique Medina Gremaldos <quiqueiii@gmail.com>
+ *  Enrique Medina Gremaldos <quique@necos.es>
  *
  * Source:
  *  https://github.com/edupals/qml-module-edupals-base
