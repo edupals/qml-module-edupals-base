@@ -1,3 +1,9 @@
+qml-module-edupals-base (1.0.3.0) noble; urgency=medium
+
+  * Using qt5 compatible string constructor
+
+ -- Enrique Medina Gremaldos <quique@necos.es>  Fri, 31 Jan 2025 13:50:31 +0100
+
 qml-module-edupals-base (1.0.2.0) noble; urgency=medium
 
   * Avoid exceptions crashing at qml level
