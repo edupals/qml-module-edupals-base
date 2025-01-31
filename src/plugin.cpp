@@ -37,16 +37,24 @@ using namespace std;
 
 User::User()
 {
-    edupals::system::User me = edupals::system::User::me();
+    try {
+        edupals::system::User me = edupals::system::User::me();
 
-    m_name = QString::fromStdString(me.name);
-    m_uid = me.uid;
-    m_gid = me.gid;
+        m_name = QString::fromStdString(me.name);
+        m_uid = me.uid;
+        m_gid = me.gid;
 
-    m_group = QString::fromStdString(me.group().name);
+        m_group = QString::fromStdString(me.group().name);
 
-    for (auto group:me.groups()) {
-        m_groups<<QString::fromStdString(group.name);
+        for (auto group:me.groups()) {
+            m_groups<<QString::fromStdString(group.name);
+        }
+    }
+    catch(...) {
+        m_name = "noname";
+        m_uid = 0xffffffff;
+        m_gid = 0xffffffff;
+        m_group = "nogroup";
     }
 
 }
