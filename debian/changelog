@@ -1,3 +1,9 @@
+qml-module-edupals-base (1.0.3.0) jammy; urgency=medium
+
+  * Using qt5 compatible string constructor
+
+ -- Enrique Medina Gremaldos <quique@necos.es>  Fri, 31 Jan 2025 13:52:41 +0100
+
 qml-module-edupals-base (1.0.2.0) jammy; urgency=medium
 
   * Avoid exceptions crashing at qml level
