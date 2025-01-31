@@ -1,0 +1,14 @@
+Source: qml-module-edupals-base
+Section: libs
+Priority: optional
+Maintainer: Enrique Medina Gremaldos <quique@necos.es>
+Build-Depends: debhelper-compat (=13), cmake, qtbase5-dev, qtdeclarative5-dev, libedupals-base-dev
+Standards-Version: 4.6.0
+Rules-Requires-Root: no
+Homepage: https://github.com/edupals
+
+Package: qml6-module-edupals-base
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: basic functionality from edupals base
+ This plugin exposes some edupals base functionality to QML

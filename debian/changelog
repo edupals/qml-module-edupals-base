@@ -1,0 +1,23 @@
+qml-module-edupals-base (1.0.2.0) jammy; urgency=medium
+
+  * Avoid exceptions crashing at qml level
+
+ -- Enrique Medina Gremaldos <quique@necos.es>  Fri, 31 Jan 2025 12:46:56 +0100
+
+qml-module-edupals-base (1.0.1.0) noble; urgency=medium
+
+  * Move to Qt6
+
+ -- Enrique Medina Gremaldos <quique@necos.es>  Mon, 16 Sep 2024 11:15:29 +0200
+
+qml-module-edupals-base (1.0.0.1) noble; urgency=medium
+
+  * Noble release
+
+ -- Enrique Medina Gremaldos <quique@necos.es>  Mon, 27 May 2024 09:58:09 +0200
+
+qml-module-edupals-base (1.0.0.0) jammy; urgency=medium
+
+  * Initial release.
+
+ -- Enrique Medina Gremaldos <quiqueiii@gmail.com>  Tue, 13 Feb 2024 16:32:59 +0100
