@@ -51,10 +51,10 @@ User::User()
         }
     }
     catch(...) {
-        m_name = "noname";
+        m_name = QString::fromStdString("noname");
         m_uid = 0xffffffff;
         m_gid = 0xffffffff;
-        m_group = "nogroup";
+        m_group = QString::fromStdString("nogroup");
     }
 
 }
