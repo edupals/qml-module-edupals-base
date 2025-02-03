@@ -7,7 +7,7 @@ Standards-Version: 4.6.0
 Rules-Requires-Root: no
 Homepage: https://github.com/edupals
 
-Package: qml6-module-edupals-base
+Package: qml-module-edupals-base
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: basic functionality from edupals base

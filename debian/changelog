@@ -1,3 +1,9 @@
+qml-module-edupals-base (1.0.3.1) jammy; urgency=medium
+
+  * Fixed typo on package name
+
+ -- Enrique Medina Gremaldos <quique@necos.es>  Mon, 03 Feb 2025 08:16:29 +0100
+
 qml-module-edupals-base (1.0.3.0) jammy; urgency=medium
 
   * Using qt5 compatible string constructor
