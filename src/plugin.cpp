@@ -40,17 +40,16 @@ vector<string> split(string line,char sep=' ')
 {
     vector<string> tokens;
 
-    bool knee=false;
     string tmp;
 
     for (char c : line) {
 
-        if (c==sep) {
+        if (c == sep) {
             tokens.push_back(tmp);
-            tmp="";
+            tmp = "";
         }
         else {
-            tmp=tmp+c;
+            tmp = tmp+c;
         }
     }
 
@@ -89,6 +88,7 @@ User::~User()
 
 UserQuery::UserQuery(): m_minUid(1000), m_maxUid(9999)
 {
+
 }
 
 QStringList UserQuery::getLocalUsers()
@@ -101,8 +101,12 @@ QStringList UserQuery::getLocalUsers()
         file.open("/etc/passwd");
         while (file.good()) {
             string line;
-            file.getline(line);
-            vector<string> user_line = split(line);
+            getline(file,line);
+
+            vector<string> user_line = split(line,':');
+            if (user_line.size() < 3) {
+                continue;
+            }
             string user_name = user_line[0];
             string user_uid = user_line[2];
 
@@ -114,8 +118,9 @@ QStringList UserQuery::getLocalUsers()
         }
         file.close();
     }
-    catch(...) {
+    catch(std::exception& e) {
         cerr<<"Failed to read passwd file"<<endl;
+        cerr<<e.what()<<endl;
     }
 
     return users;
