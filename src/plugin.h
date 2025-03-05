@@ -69,14 +69,17 @@ class UserQuery: public QObject
     Q_PROPERTY(uint32_t min MEMBER m_minUid)
     Q_PROPERTY(uint32_t max MEMBER m_maxUid)
 
+
+public:
     UserQuery();
 
     Q_INVOKABLE QStringList getLocalUsers();
 
-    protected:
+protected:
 
     uint32_t m_minUid;
     uint32_t m_maxUid;
+
 };
 
 class BasePlugin : public QQmlExtensionPlugin
