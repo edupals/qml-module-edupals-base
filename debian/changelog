@@ -1,3 +1,9 @@
+qml-module-edupals-base (1.1.0.0) noble; urgency=medium
+
+  * Added a passwd database query object
+
+ -- Enrique Medina Gremaldos <quique@necos.es>  Sun, 30 Mar 2025 22:46:05 +0200
+
 qml-module-edupals-base (1.0.3.0) noble; urgency=medium
 
   * Using qt5 compatible string constructor
